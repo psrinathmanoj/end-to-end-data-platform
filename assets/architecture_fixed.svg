@@ -1,0 +1,330 @@
+<svg height="2000" role="img" viewbox="0 0 680 1100" width="1200" xmlns="http://www.w3.org/2000/svg">
+<title>End-to-end data platform architecture</title>
+<defs>
+<marker id="arr" markerheight="6" markerwidth="6" orient="auto-start-reverse" refx="8" refy="5" viewbox="0 0 10 10">
+<path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+</marker>
+</defs>
+<!-- ══════════ BAND 1 · DATA SOURCES ══════════ -->
+<rect fill="#E6F1FB" height="152" opacity=".55" width="680" x="0" y="0"></rect>
+<rect fill="#378ADD" height="152" width="5" x="0" y="0"></rect>
+<text dominant-baseline="hanging" fill="#185FA5" font-family="sans-serif" font-size="10" font-weight="600" letter-spacing="1" x="20" y="15">DATA SOURCES</text>
+<!-- Bizom -->
+<g style="cursor:pointer">
+<rect fill="#fff" height="118" rx="8" stroke="#B5D4F4" stroke-width="1" width="112" x="14" y="24"></rect>
+<rect fill="#378ADD" height="6" rx="8" width="112" x="14" y="24"></rect>
+<rect fill="#378ADD" height="2" width="112" x="14" y="28"></rect>
+<rect fill="none" height="28" rx="4" stroke="#378ADD" stroke-width="1.5" width="40" x="50" y="40"></rect>
+<rect fill="#378ADD" height="7" rx="4" width="40" x="50" y="40"></rect>
+<circle cx="54" cy="43.5" fill="#fff" r="1.5"></circle><circle cx="59" cy="43.5" fill="#fff" r="1.5"></circle><circle cx="64" cy="43.5" fill="#fff" r="1.5"></circle>
+<line stroke="#B5D4F4" stroke-width="1.2" x1="58" x2="82" y1="56" y2="56"></line>
+<line stroke="#B5D4F4" stroke-width="1.2" x1="58" x2="75" y1="61" y2="61"></line>
+<text fill="#0C447C" font-family="sans-serif" font-size="12" font-weight="600" text-anchor="middle" x="70" y="88">Bizom</text>
+<text fill="#185FA5" font-family="sans-serif" font-size="10" text-anchor="middle" x="70" y="104">CSV reports</text>
+<text fill="#185FA5" font-family="sans-serif" font-size="10" text-anchor="middle" x="70" y="118">via Selenium</text>
+</g>
+<!-- Tally -->
+<g style="cursor:pointer">
+<rect fill="#fff" height="118" rx="8" stroke="#B5D4F4" stroke-width="1" width="112" x="141" y="24"></rect>
+<rect fill="#378ADD" height="6" rx="8" width="112" x="141" y="24"></rect>
+<rect fill="#378ADD" height="2" width="112" x="141" y="28"></rect>
+<rect fill="none" height="28" rx="3" stroke="#378ADD" stroke-width="1.5" width="36" x="179" y="40"></rect>
+<line stroke="#B5D4F4" stroke-width="1.2" x1="183" x2="211" y1="49" y2="49"></line>
+<line stroke="#B5D4F4" stroke-width="1.2" x1="183" x2="211" y1="55" y2="55"></line>
+<line stroke="#B5D4F4" stroke-width="1.2" x1="183" x2="204" y1="61" y2="61"></line>
+<line stroke="#378ADD" stroke-dasharray="2 2" stroke-width="1" x1="198" x2="198" y1="40" y2="68"></line>
+<text fill="#0C447C" font-family="sans-serif" font-size="12" font-weight="600" text-anchor="middle" x="197" y="88">Tally</text>
+<text fill="#185FA5" font-family="sans-serif" font-size="10" text-anchor="middle" x="197" y="104">JSON via TDL</text>
+<text fill="#185FA5" font-family="sans-serif" font-size="10" text-anchor="middle" x="197" y="118">ERP exports</text>
+</g>
+<!-- Google Sheets -->
+<g style="cursor:pointer">
+<rect fill="#fff" height="118" rx="8" stroke="#B5D4F4" stroke-width="1" width="112" x="268" y="24"></rect>
+<rect fill="#378ADD" height="6" rx="8" width="112" x="268" y="24"></rect>
+<rect fill="#378ADD" height="2" width="112" x="268" y="28"></rect>
+<rect fill="none" height="28" rx="3" stroke="#378ADD" stroke-width="1.5" width="36" x="306" y="40"></rect>
+<line stroke="#B5D4F4" stroke-width="1.2" x1="306" x2="342" y1="49" y2="49"></line>
+<line stroke="#B5D4F4" stroke-width="1.2" x1="306" x2="342" y1="55" y2="55"></line>
+<line stroke="#B5D4F4" stroke-width="1.2" x1="306" x2="342" y1="61" y2="61"></line>
+<line stroke="#B5D4F4" stroke-width="1.2" x1="316" x2="316" y1="40" y2="68"></line>
+<line stroke="#B5D4F4" stroke-width="1.2" x1="326" x2="326" y1="40" y2="68"></line>
+<rect fill="#378ADD" height="9" opacity=".3" rx="1" width="10" x="306" y="40"></rect>
+<text fill="#0C447C" font-family="sans-serif" font-size="12" font-weight="600" text-anchor="middle" x="324" y="84">Google</text>
+<text fill="#0C447C" font-family="sans-serif" font-size="12" font-weight="600" text-anchor="middle" x="324" y="99">Sheets</text>
+<text fill="#185FA5" font-family="sans-serif" font-size="10" text-anchor="middle" x="324" y="118">Sheets API</text>
+</g>
+<!-- Email -->
+<g style="cursor:pointer">
+<rect fill="#fff" height="118" rx="8" stroke="#B5D4F4" stroke-width="1" width="112" x="395" y="24"></rect>
+<rect fill="#378ADD" height="6" rx="8" width="112" x="395" y="24"></rect>
+<rect fill="#378ADD" height="2" width="112" x="395" y="28"></rect>
+<rect fill="none" height="28" rx="3" stroke="#378ADD" stroke-width="1.5" width="40" x="431" y="42"></rect>
+<path d="M431 42 L451 58 L471 42" fill="none" stroke="#378ADD" stroke-width="1.5"></path>
+<line stroke="#B5D4F4" stroke-width="1" x1="431" x2="445" y1="70" y2="57"></line>
+<line stroke="#B5D4F4" stroke-width="1" x1="471" x2="457" y1="70" y2="57"></line>
+<text fill="#0C447C" font-family="sans-serif" font-size="12" font-weight="600" text-anchor="middle" x="451" y="88">Email</text>
+<text fill="#185FA5" font-family="sans-serif" font-size="10" text-anchor="middle" x="451" y="104">Excel / CSV</text>
+<text fill="#185FA5" font-family="sans-serif" font-size="10" text-anchor="middle" x="451" y="118">attachments</text>
+</g>
+<!-- AppSheet -->
+<g style="cursor:pointer">
+<rect fill="#fff" height="118" rx="8" stroke="#B5D4F4" stroke-width="1" width="142" x="522" y="24"></rect>
+<rect fill="#378ADD" height="6" rx="8" width="142" x="522" y="24"></rect>
+<rect fill="#378ADD" height="2" width="142" x="522" y="28"></rect>
+<rect fill="none" height="32" rx="4" stroke="#378ADD" stroke-width="1.5" width="24" x="580" y="39"></rect>
+<rect fill="#B5D4F4" height="16" opacity=".6" rx="2" width="16" x="584" y="43"></rect>
+<circle cx="592" cy="66" fill="#378ADD" r="2"></circle>
+<text fill="#0C447C" font-family="sans-serif" font-size="12" font-weight="600" text-anchor="middle" x="593" y="88">AppSheet</text>
+<text fill="#185FA5" font-family="sans-serif" font-size="10" text-anchor="middle" x="593" y="104">Direct DB</text>
+<text fill="#185FA5" font-family="sans-serif" font-size="10" text-anchor="middle" x="593" y="118">writes</text>
+</g>
+<!-- arrows sources→ingestion -->
+<line class="fl" marker-end="url(#arr)" stroke="#378ADD" stroke-width="1.5" x1="70" x2="70" y1="142" y2="186"></line>
+<line class="fl" marker-end="url(#arr)" stroke="#378ADD" stroke-width="1.5" x1="197" x2="197" y1="142" y2="186"></line>
+<line class="fl" marker-end="url(#arr)" stroke="#378ADD" stroke-width="1.5" x1="324" x2="324" y1="142" y2="186"></line>
+<line class="fl" marker-end="url(#arr)" stroke="#378ADD" stroke-width="1.5" x1="451" x2="451" y1="142" y2="186"></line>
+<line class="fl" marker-end="url(#arr)" stroke="#378ADD" stroke-width="1.5" x1="593" x2="593" y1="142" y2="186"></line>
+<!-- ══════════ BAND 2 · INGESTION ══════════ -->
+<rect fill="#E1F5EE" height="118" opacity=".6" width="680" x="0" y="154"></rect>
+<rect fill="#1D9E75" height="118" width="5" x="0" y="154"></rect>
+<text dominant-baseline="hanging" fill="#0F6E56" font-family="sans-serif" font-size="10" font-weight="600" letter-spacing="1" x="20" y="168">INGESTION</text>
+<g style="cursor:pointer">
+<rect fill="#fff" height="76" rx="8" stroke="#9FE1CB" stroke-width="1" width="196" x="14" y="182"></rect>
+<rect fill="#1D9E75" height="5" rx="8" width="196" x="14" y="182"></rect>
+<rect fill="#1D9E75" height="2" width="196" x="14" y="185"></rect>
+<rect fill="#E1F5EE" height="22" rx="4" stroke="#1D9E75" stroke-width="1" width="32" x="28" y="196"></rect>
+<text fill="#0F6E56" font-family="monospace" font-size="9" x="31" y="204">def</text>
+<text fill="#085041" font-family="monospace" font-size="9" x="31" y="214">load()</text>
+<text fill="#085041" font-family="sans-serif" font-size="12" font-weight="600" text-anchor="middle" x="138" y="204">Python scripts</text>
+<text fill="#0F6E56" font-family="sans-serif" font-size="10" text-anchor="middle" x="138" y="220">Pandas · SQLAlchemy · Alembic</text>
+<text fill="#0F6E56" font-family="sans-serif" font-size="10" text-anchor="middle" x="138" y="234">Alembic migrations</text>
+</g>
+<g style="cursor:pointer">
+<rect fill="#fff" height="76" rx="8" stroke="#9FE1CB" stroke-width="1" width="196" x="228" y="182"></rect>
+<rect fill="#1D9E75" height="5" rx="8" width="196" x="228" y="182"></rect>
+<rect fill="#1D9E75" height="2" width="196" x="228" y="185"></rect>
+<rect fill="#E1F5EE" height="18" rx="3" stroke="#1D9E75" stroke-width="1" width="22" x="242" y="196"></rect>
+<circle cx="248" cy="203" fill="#1D9E75" r="2"></circle><circle cx="258" cy="203" fill="#1D9E75" r="2"></circle>
+<line stroke="#1D9E75" stroke-width="1" x1="250" x2="256" y1="209" y2="209"></line>
+<line stroke="#1D9E75" stroke-width="1.2" x1="253" x2="253" y1="193" y2="196"></line>
+<text fill="#085041" font-family="sans-serif" font-size="12" font-weight="600" text-anchor="middle" x="346" y="204">Selenium automation</text>
+<text fill="#0F6E56" font-family="sans-serif" font-size="10" text-anchor="middle" x="346" y="220">Bizom report download</text>
+<text fill="#0F6E56" font-family="sans-serif" font-size="10" text-anchor="middle" x="346" y="234">Scheduled scraping</text>
+</g>
+<g style="cursor:pointer">
+<rect fill="#fff" height="76" rx="8" stroke="#9FE1CB" stroke-width="1" width="222" x="442" y="182"></rect>
+<rect fill="#1D9E75" height="5" rx="8" width="222" x="442" y="182"></rect>
+<rect fill="#1D9E75" height="2" width="222" x="442" y="185"></rect>
+<path d="M458 198 L472 198 L472 214 M458 198 L458 214 L472 214" fill="none" stroke="#1D9E75" stroke-width="1.3"></path>
+<line stroke="#1D9E75" stroke-width="1" x1="461" x2="469" y1="203" y2="203"></line>
+<line stroke="#1D9E75" stroke-width="1" x1="461" x2="469" y1="207" y2="207"></line>
+<line stroke="#1D9E75" stroke-width="1" x1="461" x2="469" y1="211" y2="211"></line>
+<text fill="#085041" font-family="sans-serif" font-size="12" font-weight="600" text-anchor="middle" x="564" y="204">Email parser</text>
+<text fill="#0F6E56" font-family="sans-serif" font-size="10" text-anchor="middle" x="564" y="220">Attachment extraction</text>
+<text fill="#0F6E56" font-family="sans-serif" font-size="10" text-anchor="middle" x="564" y="234">Excel · CSV parsing</text>
+</g>
+<line class="fl" marker-end="url(#arr)" stroke="#1D9E75" stroke-width="1.5" x1="340" x2="340" y1="272" y2="308"></line>
+<!-- ══════════ BAND 3 · RAW STORAGE ══════════ -->
+<rect fill="#EEEDFE" height="88" opacity=".55" width="680" x="0" y="280"></rect>
+<rect fill="#7F77DD" height="88" width="5" x="0" y="280"></rect>
+<text dominant-baseline="hanging" fill="#534AB7" font-family="sans-serif" font-size="10" font-weight="600" letter-spacing="1" x="20" y="294">RAW STORAGE</text>
+<g style="cursor:pointer">
+<rect fill="#fff" height="52" rx="10" stroke="#AFA9EC" stroke-width="1.5" width="380" x="150" y="308"></rect>
+<rect fill="#7F77DD" height="7" rx="10" width="380" x="150" y="308"></rect>
+<rect fill="#7F77DD" height="2" width="380" x="150" y="313"></rect>
+<ellipse cx="180" cy="329" fill="#EEEDFE" rx="12" ry="4" stroke="#7F77DD" stroke-width="1.2"></ellipse>
+<rect fill="#EEEDFE" height="12" stroke="#7F77DD" stroke-width="1.2" width="24" x="168" y="329"></rect>
+<ellipse cx="180" cy="341" fill="#EEEDFE" rx="12" ry="4" stroke="#7F77DD" stroke-width="1.2"></ellipse>
+<ellipse cx="180" cy="333" fill="#EEEDFE" rx="12" ry="4" stroke="#534AB7" stroke-width="1.2"></ellipse>
+<text fill="#3C3489" font-family="sans-serif" font-size="13" font-weight="600" text-anchor="middle" x="340" y="330">PostgreSQL — raw layer</text>
+<text fill="#534AB7" font-family="sans-serif" font-size="10" text-anchor="middle" x="340" y="348">All source data landed as-is · append-only · full audit trail</text>
+</g>
+<line class="fl" marker-end="url(#arr)" stroke="#7F77DD" stroke-width="1.5" x1="340" x2="340" y1="368" y2="404"></line>
+<!-- ══════════ BAND 4 · TRANSFORMATION ══════════ -->
+<rect fill="#FAEEDA" height="164" opacity=".55" width="680" x="0" y="376"></rect>
+<rect fill="#BA7517" height="164" width="5" x="0" y="376"></rect>
+<text dominant-baseline="hanging" fill="#854F0B" font-family="sans-serif" font-size="10" font-weight="600" letter-spacing="1" x="20" y="390">TRANSFORMATION — DBT</text>
+<!-- Staging -->
+<g style="cursor:pointer">
+<rect fill="#fff" height="118" rx="8" stroke="#FAC775" stroke-width="1" width="202" x="14" y="408"></rect>
+<rect fill="#BA7517" height="6" rx="8" width="202" x="14" y="408"></rect>
+<rect fill="#BA7517" height="2" width="202" x="14" y="412"></rect>
+<path d="M50 426 L80 426 L72 438 L72 446 L58 446 L58 438 Z" fill="#FAEEDA" stroke="#BA7517" stroke-width="1.3"></path>
+<line stroke="#FAC775" stroke-width="1" x1="50" x2="80" y1="430" y2="430"></line>
+<text fill="#412402" font-family="sans-serif" font-size="12" font-weight="600" text-anchor="middle" x="143" y="432">Staging</text>
+<text fill="#633806" font-family="sans-serif" font-size="10" text-anchor="middle" x="115" y="452">Rename &amp; cast columns</text>
+<text fill="#633806" font-family="sans-serif" font-size="10" text-anchor="middle" x="115" y="468">Source freshness tests</text>
+<text fill="#854F0B" font-family="sans-serif" font-size="10" font-style="italic" text-anchor="middle" x="115" y="484">stg_* models</text>
+<text fill="#633806" font-family="sans-serif" font-size="10" text-anchor="middle" x="115" y="500">dbt source tests</text>
+</g>
+<line marker-end="url(#arr)" stroke="#BA7517" stroke-width="1.5" x1="216" x2="232" y1="467" y2="467"></line>
+<!-- Intermediate -->
+<g style="cursor:pointer">
+<rect fill="#fff" height="118" rx="8" stroke="#FAC775" stroke-width="1" width="202" x="232" y="408"></rect>
+<rect fill="#BA7517" height="6" rx="8" width="202" x="232" y="408"></rect>
+<rect fill="#BA7517" height="2" width="202" x="232" y="412"></rect>
+<circle cx="270" cy="437" fill="#FAEEDA" r="10" stroke="#BA7517" stroke-width="1.3"></circle>
+<circle cx="270" cy="437" fill="#fff" r="4" stroke="#BA7517" stroke-width="1"></circle>
+<line stroke="#BA7517" stroke-width="2" x1="270" x2="270" y1="425" y2="423"></line>
+<line stroke="#BA7517" stroke-width="2" x1="270" x2="270" y1="449" y2="451"></line>
+<line stroke="#BA7517" stroke-width="2" x1="258" x2="256" y1="437" y2="437"></line>
+<line stroke="#BA7517" stroke-width="2" x1="282" x2="284" y1="437" y2="437"></line>
+<text fill="#412402" font-family="sans-serif" font-size="12" font-weight="600" text-anchor="middle" x="356" y="432">Intermediate</text>
+<text fill="#633806" font-family="sans-serif" font-size="10" text-anchor="middle" x="333" y="452">Joins &amp; business logic</text>
+<text fill="#633806" font-family="sans-serif" font-size="10" text-anchor="middle" x="333" y="468">Reusable building blocks</text>
+<text fill="#854F0B" font-family="sans-serif" font-size="10" font-style="italic" text-anchor="middle" x="333" y="484">int_* models</text>
+<text fill="#633806" font-family="sans-serif" font-size="10" text-anchor="middle" x="333" y="500">dbt tests &amp; docs</text>
+</g>
+<line marker-end="url(#arr)" stroke="#BA7517" stroke-width="1.5" x1="434" x2="450" y1="467" y2="467"></line>
+<!-- Marts -->
+<g style="cursor:pointer">
+<rect fill="#fff" height="118" rx="8" stroke="#FAC775" stroke-width="1" width="220" x="450" y="408"></rect>
+<rect fill="#BA7517" height="6" rx="8" width="220" x="450" y="408"></rect>
+<rect fill="#BA7517" height="2" width="220" x="450" y="412"></rect>
+<rect fill="#BA7517" height="12" opacity=".7" rx="2" width="18" x="472" y="426"></rect>
+<rect fill="#EF9F27" height="10" opacity=".7" rx="2" width="14" x="464" y="442"></rect>
+<rect fill="#EF9F27" height="10" opacity=".7" rx="2" width="14" x="482" y="442"></rect>
+<line stroke="#BA7517" stroke-width="1" x1="471" x2="468" y1="438" y2="442"></line>
+<line stroke="#BA7517" stroke-width="1" x1="489" x2="492" y1="438" y2="442"></line>
+<text fill="#412402" font-family="sans-serif" font-size="12" font-weight="600" text-anchor="middle" x="565" y="432">Marts</text>
+<text fill="#633806" font-family="sans-serif" font-size="10" text-anchor="middle" x="560" y="452">Fact &amp; dimension tables</text>
+<text fill="#633806" font-family="sans-serif" font-size="10" text-anchor="middle" x="560" y="468">fct_* · dim_* models</text>
+<text fill="#854F0B" font-family="sans-serif" font-size="10" font-style="italic" text-anchor="middle" x="560" y="484">Analytics-ready</text>
+<text fill="#633806" font-family="sans-serif" font-size="10" text-anchor="middle" x="560" y="500">dbt exposures</text>
+</g>
+<line class="fl" marker-end="url(#arr)" stroke="#BA7517" stroke-width="1.5" x1="340" x2="340" y1="540" y2="574"></line>
+<!-- ══════════ BAND 5 · ANALYTICS LAYER ══════════ -->
+<rect fill="#EEEDFE" height="84" opacity=".55" width="680" x="0" y="546"></rect>
+<rect fill="#7F77DD" height="84" width="5" x="0" y="546"></rect>
+<text dominant-baseline="hanging" fill="#534AB7" font-family="sans-serif" font-size="10" font-weight="600" letter-spacing="1" x="20" y="560">ANALYTICS LAYER</text>
+<g style="cursor:pointer">
+<rect fill="#fff" height="44" rx="10" stroke="#AFA9EC" stroke-width="1.5" width="380" x="150" y="578"></rect>
+<rect fill="#7F77DD" height="7" rx="10" width="380" x="150" y="578"></rect>
+<rect fill="#7F77DD" height="2" width="380" x="150" y="583"></rect>
+<ellipse cx="180" cy="596" fill="#EEEDFE" rx="12" ry="4" stroke="#7F77DD" stroke-width="1.2"></ellipse>
+<rect fill="#EEEDFE" height="10" stroke="#7F77DD" stroke-width="1.2" width="24" x="168" y="596"></rect>
+<ellipse cx="180" cy="606" fill="#EEEDFE" rx="12" ry="4" stroke="#7F77DD" stroke-width="1.2"></ellipse>
+<ellipse cx="180" cy="600" fill="#EEEDFE" rx="12" ry="4" stroke="#534AB7" stroke-width="1.2"></ellipse>
+<text fill="#3C3489" font-family="sans-serif" font-size="13" font-weight="600" text-anchor="middle" x="340" y="597">PostgreSQL — analytics layer</text>
+<text fill="#534AB7" font-family="sans-serif" font-size="10" text-anchor="middle" x="340" y="614">Transformed · query-ready · served to BI tools</text>
+</g>
+<line class="fl" marker-end="url(#arr)" stroke="#7F77DD" stroke-width="1.5" x1="340" x2="340" y1="622" y2="656"></line>
+<!-- ══════════ BAND 6 · VISUALIZATION ══════════ -->
+<rect fill="#FAECE7" height="84" opacity=".6" width="680" x="0" y="628"></rect>
+<rect fill="#D85A30" height="84" width="5" x="0" y="628"></rect>
+<text dominant-baseline="hanging" fill="#993C1D" font-family="sans-serif" font-size="10" font-weight="600" letter-spacing="1" x="20" y="642">VISUALIZATION</text>
+<g style="cursor:pointer">
+<rect fill="#fff" height="50" rx="10" stroke="#F5C4B3" stroke-width="1.5" width="380" x="150" y="654"></rect>
+<rect fill="#D85A30" height="7" rx="10" width="380" x="150" y="654"></rect>
+<rect fill="#D85A30" height="2" width="380" x="150" y="659"></rect>
+<rect fill="#D85A30" height="16" opacity=".7" rx="1" width="7" x="172" y="676"></rect>
+<rect fill="#D85A30" height="24" rx="1" width="7" x="182" y="668"></rect>
+<rect fill="#D85A30" height="12" opacity=".5" rx="1" width="7" x="192" y="680"></rect>
+<line stroke="#D85A30" stroke-width="1" x1="170" x2="203" y1="692" y2="692"></line>
+<text fill="#4A1B0C" font-family="sans-serif" font-size="13" font-weight="600" text-anchor="middle" x="360" y="674">Power BI dashboards</text>
+<text fill="#712B13" font-family="sans-serif" font-size="10" text-anchor="middle" x="360" y="692">Business KPIs · operational reports · data quality views</text>
+</g>
+<!-- ══════════ BAND 7 · ORCHESTRATION ══════════ -->
+<rect fill="#F1EFE8" height="92" opacity=".65" width="680" x="0" y="724"></rect>
+<rect fill="#888780" height="92" width="5" x="0" y="724"></rect>
+<text dominant-baseline="hanging" fill="#5F5E5A" font-family="sans-serif" font-size="10" font-weight="600" letter-spacing="1" x="20" y="738">ORCHESTRATION &amp; API</text>
+<g style="cursor:pointer">
+<rect fill="#fff" height="52" rx="8" stroke="#D3D1C7" stroke-width="1" width="300" x="14" y="752"></rect>
+<rect fill="#888780" height="5" rx="8" width="300" x="14" y="752"></rect>
+<rect fill="#888780" height="2" width="300" x="14" y="755"></rect>
+<circle cx="44" cy="776" fill="#F1EFE8" r="10" stroke="#888780" stroke-width="1.2"></circle>
+<circle cx="41" cy="773" fill="#888780" r="2"></circle><circle cx="47" cy="773" fill="#888780" r="2"></circle>
+<path d="M38 779 Q44 783 50 779" fill="none" stroke="#888780" stroke-width="1.2"></path>
+<line stroke="#888780" stroke-width="1.2" x1="44" x2="44" y1="766" y2="769"></line>
+<text fill="#2C2C2A" font-family="sans-serif" font-size="12" font-weight="600" text-anchor="middle" x="175" y="773">GitHub Actions</text>
+<text fill="#5F5E5A" font-family="sans-serif" font-size="10" text-anchor="middle" x="175" y="789">Daily scheduled pipeline trigger</text>
+</g>
+<g style="cursor:pointer">
+<rect fill="#fff" height="52" rx="8" stroke="#D3D1C7" stroke-width="1" width="334" x="330" y="752"></rect>
+<rect fill="#888780" height="5" rx="8" width="334" x="330" y="752"></rect>
+<rect fill="#888780" height="2" width="334" x="330" y="755"></rect>
+<rect fill="#F1EFE8" height="16" rx="3" stroke="#888780" stroke-width="1.2" width="20" x="352" y="763"></rect>
+<line stroke="#888780" stroke-width="1.5" x1="357" x2="357" y1="763" y2="758"></line>
+<line stroke="#888780" stroke-width="1.5" x1="367" x2="367" y1="763" y2="758"></line>
+<line stroke="#888780" stroke-width="1.5" x1="362" x2="362" y1="779" y2="784"></line>
+<text fill="#2C2C2A" font-family="sans-serif" font-size="12" font-weight="600" text-anchor="middle" x="508" y="773">Power BI REST API</text>
+<text fill="#5F5E5A" font-family="sans-serif" font-size="10" text-anchor="middle" x="508" y="789">Dataset refresh via Python script</text>
+</g>
+<path class="fl2" d="M164 752 L164 734 L8 734 L8 165 L14 165" fill="none" marker-end="url(#arr)" stroke="#888780" stroke-dasharray="5 4" stroke-width="1"></path>
+<path class="fl2" d="M497 752 L497 714 L528 714 L528 704" fill="none" marker-end="url(#arr)" stroke="#888780" stroke-dasharray="5 4" stroke-width="1"></path>
+<!-- ══════════ BAND 8 · MONITORING & RECOVERY ══════════ -->
+<rect fill="#EAF3DE" height="258" opacity=".55" width="680" x="0" y="828"></rect>
+<rect fill="#639922" height="258" width="5" x="0" y="828"></rect>
+<text dominant-baseline="hanging" fill="#3B6D11" font-family="sans-serif" font-size="10" font-weight="600" letter-spacing="1" x="20" y="842">MONITORING &amp; RECOVERY</text>
+<!-- Data quality dashboard -->
+<g style="cursor:pointer">
+<rect fill="#fff" height="210" rx="8" stroke="#C0DD97" stroke-width="1" width="200" x="14" y="858"></rect>
+<rect fill="#639922" height="6" rx="8" width="200" x="14" y="858"></rect>
+<rect fill="#639922" height="2" width="200" x="14" y="862"></rect>
+<path d="M44 878 L44 898 Q44 904 52 908 Q60 904 60 898 L60 878 Z" fill="#EAF3DE" stroke="#639922" stroke-width="1.3"></path>
+<path d="M47 894 L51 899 L58 887" fill="none" stroke="#639922" stroke-linecap="round" stroke-width="1.5"></path>
+<text fill="#173404" font-family="sans-serif" font-size="11" font-weight="600" text-anchor="middle" x="114" y="882">Data quality</text>
+<text fill="#173404" font-family="sans-serif" font-size="11" font-weight="600" text-anchor="middle" x="114" y="896">dashboards</text>
+<text fill="#3B6D11" font-family="sans-serif" font-size="10" text-anchor="middle" x="114" y="916">Row counts · freshness</text>
+<text fill="#3B6D11" font-family="sans-serif" font-size="10" text-anchor="middle" x="114" y="932">dbt test results</text>
+<text fill="#3B6D11" font-family="sans-serif" font-size="10" text-anchor="middle" x="114" y="948">SLA alerts</text>
+<text fill="#3B6D11" font-family="sans-serif" font-size="10" text-anchor="middle" x="114" y="964">~98% accuracy tracked</text>
+</g>
+<!-- ★ INVOICE VALIDATION card — lives inside monitoring ★ -->
+<g style="cursor:pointer">
+<rect fill="#fff" height="210" rx="8" stroke="#F7C1C1" stroke-width="1.5" width="216" x="230" y="858"></rect>
+<rect fill="#E24B4A" height="6" rx="8" width="216" x="230" y="858"></rect>
+<rect fill="#E24B4A" height="2" width="216" x="230" y="862"></rect>
+<!-- receipt icon -->
+<rect fill="#FCEBEB" height="32" rx="3" stroke="#E24B4A" stroke-width="1.2" width="26" x="252" y="874"></rect>
+<line stroke="#F09595" stroke-width="1" x1="256" x2="274" y1="881" y2="881"></line>
+<line stroke="#F09595" stroke-width="1" x1="256" x2="274" y1="886" y2="886"></line>
+<line stroke="#F09595" stroke-width="1" x1="256" x2="268" y1="891" y2="891"></line>
+<line stroke="#F09595" stroke-width="1" x1="256" x2="271" y1="896" y2="896"></line>
+<!-- compare arrows -->
+<line marker-end="url(#arr)" stroke="#E24B4A" stroke-width="1.5" x1="284" x2="296" y1="886" y2="886"></line>
+<line marker-end="url(#arr)" stroke="#E24B4A" stroke-width="1.5" x1="296" x2="284" y1="892" y2="892"></line>
+<!-- DB mini icon -->
+<ellipse cx="308" cy="879" fill="#FCEBEB" rx="8" ry="3" stroke="#E24B4A" stroke-width="1"></ellipse>
+<rect fill="#FCEBEB" height="10" stroke="#E24B4A" stroke-width="1" width="16" x="300" y="879"></rect>
+<ellipse cx="308" cy="889" fill="#FCEBEB" rx="8" ry="3" stroke="#E24B4A" stroke-width="1"></ellipse>
+<text fill="#791F1F" font-family="sans-serif" font-size="11" font-weight="600" text-anchor="middle" x="338" y="878">Invoice</text>
+<text fill="#791F1F" font-family="sans-serif" font-size="11" font-weight="600" text-anchor="middle" x="338" y="892">validation</text>
+<text fill="#A32D2D" font-family="sans-serif" font-size="10" text-anchor="middle" x="338" y="916">Selenium scrapes</text>
+<text fill="#A32D2D" font-family="sans-serif" font-size="10" text-anchor="middle" x="338" y="932">Bizom UI invoices</text>
+<text fill="#A32D2D" font-family="sans-serif" font-size="10" text-anchor="middle" x="338" y="948">Cross-checks vs DB</text>
+<text fill="#A32D2D" font-family="sans-serif" font-size="10" text-anchor="middle" x="338" y="964">Flags mismatches</text>
+<text fill="#791F1F" font-family="sans-serif" font-size="10" font-weight="600" text-anchor="middle" x="338" y="982">100% accuracy</text>
+<!-- badge -->
+<rect fill="#FCEBEB" height="20" rx="6" stroke="#E24B4A" stroke-width="1" width="116" x="266" y="1020"></rect>
+<text fill="#A32D2D" font-family="sans-serif" font-size="9" font-weight="600" text-anchor="middle" x="324" y="1034">✓ Post-pipeline check</text>
+</g>
+<!-- Streamlit UI -->
+<g style="cursor:pointer">
+<rect fill="#fff" height="210" rx="8" stroke="#C0DD97" stroke-width="1" width="202" x="462" y="858"></rect>
+<rect fill="#639922" height="6" rx="8" width="202" x="462" y="858"></rect>
+<rect fill="#639922" height="2" width="202" x="462" y="862"></rect>
+<rect fill="#EAF3DE" height="28" rx="4" stroke="#639922" stroke-width="1.2" width="40" x="482" y="874"></rect>
+<line stroke="#639922" stroke-width="1" x1="486" x2="500" y1="880" y2="880"></line>
+<line stroke="#97C459" stroke-width="1" x1="486" x2="516" y1="885" y2="885"></line>
+<line stroke="#97C459" stroke-width="1" x1="486" x2="510" y1="890" y2="890"></line>
+<rect fill="#639922" height="4" opacity=".5" rx="1" width="14" x="486" y="894"></rect>
+<text fill="#173404" font-family="sans-serif" font-size="11" font-weight="600" text-anchor="middle" x="563" y="882">Streamlit UI</text>
+<text fill="#3B6D11" font-family="sans-serif" font-size="10" text-anchor="middle" x="563" y="916">Manual trigger</text>
+<text fill="#3B6D11" font-family="sans-serif" font-size="10" text-anchor="middle" x="563" y="932">Failure recovery</text>
+<text fill="#3B6D11" font-family="sans-serif" font-size="10" text-anchor="middle" x="563" y="948">&amp; replay</text>
+<text fill="#3B6D11" font-family="sans-serif" font-size="10" text-anchor="middle" x="563" y="964">Run status &amp; logs</text>
+<text fill="#3B6D11" font-family="sans-serif" font-size="10" text-anchor="middle" x="563" y="982">Re-trigger steps</text>
+</g>
+<!-- dashed arrow: Bizom source → invoice validation (shows it reads from Bizom UI) -->
+<path class="fl2" d="M70 132 L70 818 L230 818 L230 900" fill="none" marker-end="url(#arr)" stroke="#E24B4A" stroke-dasharray="4 3" stroke-width="1"></path>
+<rect fill="#FCEBEB" height="14" rx="4" width="128" x="72" y="800"></rect>
+<text fill="#A32D2D" font-family="sans-serif" font-size="8" text-anchor="middle" x="136" y="810">reads Bizom UI directly</text>
+<!-- dashed arrow: raw DB → invoice validation (cross-check source) -->
+<path class="fl2" d="M530 360 L530 818 L446 818 L446 900" fill="none" marker-end="url(#arr)" stroke="#E24B4A" stroke-dasharray="4 3" stroke-width="1" y1="334"></path>
+<path class="fl2" d="M530 360 L530 820 L446 820 L446 900" fill="none" marker-end="url(#arr)" stroke="#E24B4A" stroke-dasharray="4 3" stroke-width="1"></path>
+<rect fill="#FCEBEB" height="14" rx="4" width="128" x="450" y="800"></rect>
+<text fill="#A32D2D" font-family="sans-serif" font-size="8" text-anchor="middle" x="514" y="810">compares against raw DB</text>
+<!-- monitoring feedback arrow -->
+<path class="fl2" d="M14 963 L4 963 L4 160 L14 160" fill="none" marker-end="url(#arr)" stroke="#639922" stroke-dasharray="5 4" stroke-width="1"></path>
+</svg>

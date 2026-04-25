@@ -6,7 +6,7 @@
 
 ## 📐 Architecture
 
-![Data Platform Architecture](assets/architecture.html)
+![Data Platform Architecture](assets/architecture_fixed.svg)
 
 **Flow:**
 `Sources` → `Ingestion` → `PostgreSQL (Raw)` → `dbt (Staging → Intermediate → Marts)` → `PostgreSQL (Analytics)` → `Power BI`

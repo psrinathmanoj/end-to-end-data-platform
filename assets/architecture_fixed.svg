@@ -1,4 +1,8 @@
-<svg height="2000" role="img" viewbox="0 0 680 1100" width="1200" xmlns="http://www.w3.org/2000/svg">
+<svg width="680" height="1086" role="img" viewBox="0 0 680 1086" xmlns="http://www.w3.org/2000/svg">
+<style>
+.fl { stroke-dasharray: 6 4; }
+.fl2 { stroke-dasharray: 5 5; }
+</style>
 <title>End-to-end data platform architecture</title>
 <defs>
 <marker id="arr" markerheight="6" markerwidth="6" orient="auto-start-reverse" refx="8" refy="5" viewbox="0 0 10 10">
